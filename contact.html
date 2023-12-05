@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Topbar -->
+    <div class="bg-teal-950 py-2">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    <i class="fas fa-phone-alt"></i> +1 (555) 123-4567
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-white ml-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="bg-teal-900 py-3">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center text-white">
+                <div>
+                    <h1 class="font-sans text-2xl font-semibold uppercase">lifeme</h1>
+                </div>
+                <div class="space-x-4 text-xl">
+                    <a href="/index.html" class="btn btn-outline-primary">Home</a>
+                    <a href="/gallery.html" class="btn btn-outline-primary">Gallery</a>
+                    <a href="/about.html" class="btn btn-outline-primary">About</a>
+                    <a href="/video.html" class="btn btn-outline-primary">Video</a>
+                    <a href="/contact.html" class="btn btn-outline-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="h-screen">
+        <div class="bg-teal-950 mt-10 p-8 w-full md:w-1/4 mx-auto">
+            <h2 class="text-2xl font-bold mb-4 text-center text-white">Login</h2>
+            <form>
+                <div class="mb-3">
+                    <label class=" text-white text-xl">Email address</label>
+                    <input required="" type="email" class="mt-1 py-2 rounded block w-full" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class=" text-yellow-500 mt-1">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white text-xl">Password</label>
+                    <input required="" type="password" class="py-2 rounded mt-1 block w-full" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <button type="submit"
+                        class="bg-yellow-500 hover:bg-amber-500 text-black w-full font-normal text-xl py-2 px-4 rounded">Login</button>
+                </div>
+                <div class="text-left">
+                    <span class="text-white text-xl">Forgot password?</span>
+                </div>
+                <div class="text-center mt-3">
+                    <h6 class="text-gray-600" style="cursor: pointer;"><a class="text-yellow-500 text-left" href="/signup">New
+                            to MotoFlix?
+                            Signup</a></h6>
+                </div>
+            </form>
+            <div class="text-center mt-4 w-full">
+                <button class="bg-white border border-gray-300 text-gray-600 font-bold py-2 px-4 rounded w-full">
+                    <img src="/google.svg" alt="" class="inline w-5 h-5 mr-2">
+                    <p class="inline"> Continue with Google </p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-3">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    &copy; 2021 My Website. All rights reserved.
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-white ml-2">Privacy Policy</a>
+                    <a href="#" class="text-white ml-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <style>
+        .image-zoom {
+            transition: transform .2s;
+        }
+        .image-zoom:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar -->
+    <div class="bg-teal-950 py-2">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    <i class="fas fa-phone-alt"></i> +1 (555) 123-4567
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-white ml-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="bg-teal-900 py-3">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center text-white">
+                <div>
+                    <h1 class="font-sans text-2xl font-semibold uppercase">lifeme</h1>
+                </div>
+                <div class="space-x-4 text-xl">
+                    <a href="/index.html" class="btn btn-outline-primary">Home</a>
+                    <a href="/gallery.html" class="btn btn-outline-primary">Gallery</a>
+                    <a href="/about.html" class="btn btn-outline-primary">About</a>
+                    <a href="/video.html" class="btn btn-outline-primary">Video</a>
+                    <a href="/contact.html" class="btn btn-outline-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Gallery Grid -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold mb-8">Our Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-1.jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-2.jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-3.jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-4.jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-5.jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="/motorcycle-6..jpg" alt="Image 1" class="w-full h-48 object-cover image-zoom">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Image 1</h3>
+                    <p class="text-gray-600">Description for image 1</p>
+                </div>
+            </div>
+            <!-- Add more gallery items here -->
+        </div>
+    </div>
+    <script>
+        const imageZoom = document.querySelectorAll('.image-zoom');
+        imageZoom.forEach(img => {
+            img.addEventListener('click', function() {
+                window.open(this.src, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    
+    <style>
+        .bg-image {
+            background-image: url('./motorcycle-1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 750px!important;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Topbar -->
+    <div class="bg-teal-950 py-2">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    <i class="fas fa-phone-alt"></i> +1 (555) 123-4567
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-white ml-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-teal-900 py-3">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center text-white">
+                <div>
+                    <h1 class="font-sans text-2xl font-semibold uppercase">lifeme</h1>
+                </div>
+                <div class="space-x-4 text-xl">
+                    <a href="/index.html" class="btn btn-outline-primary">Home</a>
+                    <a href="/gallery.html" class="btn btn-outline-primary">Gallery</a>
+                    <a href="/about.html" class="btn btn-outline-primary">About</a>
+                    <a href="/video.html" class="btn btn-outline-primary">Video</a>
+                    <a href="/contact.html" class="btn btn-outline-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-image py-5 h-auto">
+        <div class="container mx-auto">
+            <div class="text-left pt-48">
+                <h1 class="text-teal-950 text-7xl font-black w-[30%]">Welcome to Our Website</h1>
+                <p class="text-teal-900 text-bold text-2xl mt-5 mb-8 w-[30%]">This is a sample website made using HTML, CSS, and Tailwind CSS</p>
+                <a href="/about.html" class="btn bg-teal-700 px-8 py-3 text-white">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-3">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-white">
+                    &copy; 2021 My Website. All rights reserved.
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-white ml-2">Privacy Policy</a>
+                    <a href="#" class="text-white ml-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
